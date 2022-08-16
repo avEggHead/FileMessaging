@@ -9,6 +9,7 @@ namespace FileMover
     internal class FileArchiver
     {
         internal const string FilePath = "C:\\JustForTesting\\";
+        internal const string ArchivePath = FilePath + "Archive\\";
 
         internal static bool IsThereAFile()
         {
@@ -22,6 +23,20 @@ namespace FileMover
             }
 
             return isFile;
+        }
+
+        internal static void MoveTheFiles()
+        {
+            if (!Directory.Exists(ArchivePath))
+            {
+                Directory.CreateDirectory(ArchivePath);
+            }
+            DirectoryInfo di = new DirectoryInfo(FilePath);
+            
+            foreach(var fi in di.GetFiles())
+            {
+                fi.MoveTo(ArchivePath + fi.Name, true);
+            }
         }
     }
 }
