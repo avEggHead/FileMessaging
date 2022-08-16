@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31808.319
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustPractice001", "JustPractice001\JustPractice001.csproj", "{910F491A-983D-476A-A807-4E06123EF8FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileCreator", "JustPractice001\FileCreator.csproj", "{910F491A-983D-476A-A807-4E06123EF8FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileMover", "FileMover\FileMover.csproj", "{3FE73D35-66C8-4B78-A214-F195CB10755D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileMover", "FileMover\FileMover.csproj", "{3FE73D35-66C8-4B78-A214-F195CB10755D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
